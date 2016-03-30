@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [quizSuite]">
+  <parameter name="passWord" value="training"/>
+  <parameter name="subject" value="CSS"/>
+  <parameter name="userName" value="Neelu326@gmail.com"/>
+  <test name="quizTest">
+    <parameter name="passWord" value="training"/>
+    <parameter name="subject" value="CSS"/>
+    <parameter name="userName" value="Neelu326@gmail.com"/>
+    <classes>
+      <class name="com.tests.QuizPageTest"/>
+    </classes>
+  </test> <!-- quizTest -->
+  <test name="quizTest(failed)">
+    <parameter name="passWord" value="training"/>
+    <parameter name="subject" value="CSS"/>
+    <parameter name="userName" value="Neelu326@gmail.com"/>
+    <classes>
+      <class name="com.tests.QuizPageTest">
+        <methods>
+          <include name="testQuizPage"/>
+          <include name="teardown"/>
+          <include name="testquestionPage" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.tests.QuizPageTest -->
+    </classes>
+  </test> <!-- quizTest(failed) -->
+</suite> <!-- Failed suite [quizSuite] -->

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="quizSuite" verbose="1">
+<test name="quizTest">
+        <parameter name="userName" value="Neelu326@gmail.com"></parameter>
+        <parameter name="passWord" value="training"></parameter>
+         <parameter name="subject" value="CSS"></parameter>
+        
+    <classes>
+               <class name="com.tests.QuizPageTest"/>
+    
+    </classes>
+
+</test>
+
+</suite>

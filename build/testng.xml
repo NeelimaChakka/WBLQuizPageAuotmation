@@ -1,0 +1,6 @@
+<suite name="UIAuotmation" verbose="1">
+<suite-files>
+<suite-file path="login-suite.xml"/>
+<suite-file path="quiz-suite.xml"/>
+</suite-files>
+</suite>
